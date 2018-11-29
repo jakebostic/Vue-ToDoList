@@ -15,14 +15,6 @@ export default {
     TodoList,
     CreateTodo,
   },
-  methods: {
-    addTodo(title) {
-      this.todos.push({
-        title,
-        done: false,
-      });
-    },
-  },
   data() {
     return {
       todos: [{
@@ -43,6 +35,11 @@ export default {
         done: false,
       }],
     };
+  },
+  methods: {
+    addTodo(todo) {
+      this.todos.push(todo);
+    },
   },
 };
 </script>
