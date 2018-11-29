@@ -51,7 +51,7 @@
       };
     },
     methods: {
-      deleteTodo() {
+      deleteTodo(todo) {
         this.$emit('delete-todo', todo);
       },
       showForm() {
